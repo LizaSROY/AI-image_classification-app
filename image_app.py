@@ -12,7 +12,7 @@ from transformers import pipeline
 
 from sqlalchemy import create_engine
 url = 'mysql+pymysql://root:Liza1133@localhost:3306/image_classification'
-engine = create_engine(url)
+engine = create_engine(st.secrets[url])
 
 
 # Configure matplotlib and seaborn styling
